@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma №3</title>
+    <script src="https://kit.fontawesome.com/a59c52c30e.js" crossorigin="anonymous"></script>
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 450px;
+            height: 350px;
+            border: 1px solid gray;
+            margin-left: 50px;
+            padding: 20px;
+            align-content: space-between;
+            margin-bottom: 0;
+            padding-bottom: 0;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            vertical-align: top;
+        }
+
+
+        h1 {
+            margin-bottom: 5px;
+            margin-top: 0;
+            padding-top: 0px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 0;
+            height: 20px;
+            width: auto;
+        }
+
+        label {
+            font-family: 'Times New Roman', Times, serif;
+            size: 14px;
+        }
+
+       
+        span{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+           
+       
+        }
+        .one{
+            margin-top: 9px;
+            margin-right: 3px;
+        }
+        .two{
+            margin-top: 20px;
+            margin-left: 3px;
+        }
+        input{
+            margin-top: 5px;
+            height: 20px;
+            width: auto;
+            padding: 0;
+        }
+        select{
+            height: 20px;
+        }
+        textarea{
+            margin-bottom: 7px;
+        }
+        i{
+            margin-right: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <form action="#" method="post">
+            <h1>Personal details </h1>
+            <span class="one">
+                <lable class="name" for="name"><i class="fa-solid fa-user"></i> First Name</lable>
+                <input type="text" name="name" placeholder="First Name">
+                <label class="city" for="city"><i class="fa-solid fa-house"></i> Address</label>
+                <textarea name="city" rows="4" ></textarea>
+                <label class="psw" for="psw"><i class="fa-solid fa-lock"></i> Password</label>
+                <input type="password" name="psw" placeholder="Password">
+                <label class="pin" for="pin"><i class="fa-solid fa-thumbtack"></i>Pincode</label>
+                <input type="password" name="pin" placeholder="Pincode">
+            </span>
+            <span class="two">
+                 <label class="Lname" for="Lname" style="padding-top: 30px;">Last Name</label>
+                <input type="text" name="Lname" placeholder="Last Name">
+                <label class="country" for="country"><i class="fa-solid fa-flag"></i> Country</label>
+                <select name="country">
+                    <option> Select Country</option>
+                </select>
+                <label class="email" for="email"><i class="fa-solid fa-envelope"></i>Email</label>
+                <input type="email" placeholder="example@email.com">
+                <label class="psw2" for="psw2"> <i class="fa-solid fa-arrow-rotate-right"></i>Confirm Password</label>
+                <input type="password" name="psw2" placeholder="Confirm Password">
+                <label class="number" for="number"> <i class="fa-solid fa-mobile-screen-button"></i>Contact Number</label>
+                <input type="tel" name="number" placeholder="Contact Number">
+            </span>
+
+        </form>
+
+
+
+
+    </main>
+</body>
+
+</html>
