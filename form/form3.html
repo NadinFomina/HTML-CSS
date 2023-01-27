@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: row;
+            margin: 100px auto;
+            width: 800px;
+            padding: 1em;
+            border: 3px solid grey;
+            border-radius: 1em;
+            justify-content: left;
+            flex-wrap: nowrap;
+            height: auto;
+            background-color: rgb(213, 218, 218);
+        }
+
+        h1 {
+            align-items: flex-start;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        form li+li {
+            margin-top: 2em;
+        }
+
+        li {
+            justify-items: left;
+
+
+        }
+
+        input,
+        textarea {
+            font: 1em sans-serif;
+            width: 300px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+        textarea{
+            width: 700px;
+            margin-top: 0.5em;
+           
+        }
+        input{
+            height: 40px;
+        }
+        button{
+            background-color: rgb(103, 107, 107);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px ;
+            font-weight: bolder;
+            border-radius: 5px;
+            height: 40px;
+            width: 100px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="#">
+            <ul>
+                <h1> Форма обратной связи</h1>
+                <li>
+                    <input type="text" name="name">
+                    <label for="name">Ваше имя</label>
+                </li>
+                <li>
+                    <input type="email" name="email">
+                    <label for="email"> Электронная почта</label>
+                </li>
+                <li>
+
+                    <input type="text" name="topic">
+                    <label for="topic"> Тема сообщения</label>
+                </li>
+                <li> <label for="story">Текст сообщения:</label> </li>
+
+                <textarea id="story" name="story" rows="3" cols="30"></textarea>
+
+                <p> <button><b>Отправить</b></button></p>
+
+            </ul>
+        </form>
+    </main>
+</body>
+
+</html>
