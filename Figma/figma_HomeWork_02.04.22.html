@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0 170px;
+            width: 1000px;
+            height: 4132px;
+        }
+
+        span {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        span nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 400;
+            color: #605C59;
+            ;
+        }
+
+        li {
+            margin: 20px;
+        }
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 30px;
+            margin-bottom: 101px;
+        }
+
+        img {
+            filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.5));
+            border-radius: 5px;
+          
+        }
+
+        .autor {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .autor img {
+            width: 42px;
+            height: 42px;
+            margin-right: 14px;
+            border-radius: 100%;
+        }
+
+        .one {
+            width: 800px;
+             height: 133px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 160%;
+            color:  #434343;
+;
+        }
+
+        .two {
+            width: 800px;
+          height: fit-content;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+            color:  #434343;
+        }
+
+        article {
+            width: 800px;
+            height: 238px;
+            margin-bottom: 40px;
+            background: #F5F5F5;
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            border-radius: 7px;
+        }
+
+        h3 {
+            margin-left: 0px;
+            margin-top: 33px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 160%;
+            margin: 0;
+        }
+
+        article h3 {
+            margin-left: 35px;
+            margin-top: 33px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 160%;
+        }
+
+        article ol li {
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            text-decoration: underline;
+        }
+
+        .related {
+            width: 800px;
+            height: 449px;
+            background-color: white;
+            border: none;
+            box-sizing: border-box;
+            border-radius: 0;
+
+        }
+
+        .relatid div img {
+            float: left;
+            position: relative;
+        }
+
+        .related div {
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            align-items: flex-start;
+
+        }
+
+        .about {
+            width: 800px;
+            height: 238px;
+            margin-bottom: 40px;
+            background: #F5F5F5;
+            border: 1px solid #DDDDDD;
+
+            border-radius: 7px;
+
+        }
+
+        .about img {
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+            position: relative;
+            top: 44px;
+            left: 31px;
+            float: left;
+            margin-right: 29px;
+        }
+
+        .about p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            width: 555px;
+            height: 92px;
+            position: absolute;
+            left: 400px;
+            top: 3200px;
+        }
+
+        .about h3 {
+            position: absolute;
+            left: 400px;
+            top: 3150px;
+            margin: 0;
+
+        }
+
+        .lab h3 {
+            position: absolute;
+            left: 480px;
+            top: 2600px;
+            width: 516px;
+            height: 76px;
+            margin: 0;
+        }
+
+        .lab p {
+            position: absolute;
+            left: 480px;
+            top: 2700px;
+            width: 516px;
+            height: 76px;
+            margin: 0;
+        }
+
+        .cook h3 {
+            position: absolute;
+            left: 480px;
+            top: 2800px;
+            width: 516px;
+            height: 76px;
+            margin: 0;
+        }
+
+        .cook p {
+            position: absolute;
+            left: 480px;
+            top: 2900px;
+            width: 516px;
+            height: 76px;
+            margin: 0;
+        }
+
+        .five {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 1000px;
+            height: 350px;
+            padding: 0;
+        }
+
+        .five div {
+            display: flex;
+            flex-direction: column;
+            margin-right: 30px;
+            width: 250px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input {
+            width: 250px;
+            height: 52px;
+            margin-bottom: 32px;
+        }
+
+        button {
+            width: 99px;
+            height: 47px;
+            padding: 9px;
+            background-color: #000638;
+            color: white;
+            font-size: 18px;
+        }
+
+        .background {
+            padding: 30px;
+            background-color: #283A61;
+            
+        }
+
+        footer {
+            position: absolute;
+            top: 3850px;
+
+        }
+
+        footer nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 260px;
+
+        }
+
+        .footer li {
+            width: 107px;
+        }
+
+        footer section {
+            position: absolute;
+            top: 40px;
+            width: 387px;
+            left: 260px;
+            margin: 26px;
+            font-size: 14px;
+        }
+
+        p {
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            margin: 5px;
+        }
+
+        h4 {
+            font-size: 14px;
+            margin-bottom: 14px;
+            background-color:  #283A61;
+            color: white;
+            width: 112px;
+            height: 26px;
+            padding-top: 6px;
+            text-align: center;
+           
+
+        }
+
+        .top {
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 58px;
+        }
+        .data{
+            font-size: 14px;
+           color: #515151;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span>
+            <h1>Food Ninja</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </span>
+    </header>
+    <main>
+        <div>
+            <h4>
+                Food Theory
+            </h4>
+            <section class="top">What I Learned About Life and Food Backpacking Around Greece</section>
+            <p class="data">Aug 1, 2021-7 min read</p>
+            <img src="./figma.png">
+            <section class="autor">
+                <img src="./image 3.png">
+                <p>George Costanza</p>
+            </section>
+        </div>
+        <section class="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices dui diam arcu
+            pharetra at laoreet pellentesque. Imperdiet sit ut ornare nulla risus id fames nascetur urna. Eros in
+            neque tincidunt.</section>
+        <section class="two">Vel leo proin facilisis metus sit ut cursus sagittis. Diam donec mus malesuada et ac
+            vulputate. Aenean lacinia suspendisse et mattis adipiscing id dictum commodo nunc. Feugiat lorem cras ut
+            cras enim neque, elit, facilisi habitasse. Facilisis faucibus nunc congue urna diam. Vitae, diam justo,
+            massa, elit. In et nibh ut in diam tellus at tellus diam.</section>
+        <article>
+            <h3>In this article</h3>
+            <ol>
+                <li>How to travel without spending a dime</li>
+                <li>Get the most out of your credit card reward points</li>
+                <li>Why you don't need more than 3 pieces of clothing</li>
+            </ol>
+        </article>
+        <section class="two">Amet aliquet at a aliquam ac suspendisse euismod. Lectus sit in ut erat in. Et nulla a
+            magna amet, amet. Sodales malesuada laoreet bibendum neque amet turpis non. Ac arcu lacus turpis
+            elementum imperdiet. Euismod purus, libero scelerisque vitae, libero fermentum urna, nunc.
+        </section>
+        <h3>How to travel without spending a dime</h3>
+        <section class="two">Dignissim lacus sit congue lacus aliquam. Ut non fermentum vulputate donec enim sed
+            ornare scelerisque. Sollicitudin orci leo egestas fermentum platea a imperdiet nisl. Velit placerat nibh
+            nisl ut feugiat. Egestas id egestas nunc mattis. Sed mauris vitae commodo pharetra, vestibulum rhoncus
+            natoque.</section>
+        <section class="two">Leo id aliquet potenti enim sed maecenas sed ornare. Risus nam mauris etiam nibh
+            maecenas nibh interdum mauris suspendisse. Volutpat, enim interdum facilisi mauris vitae id. Vel
+            malesuada sit etiam dolor. Ullamcorper habitant vitae, nec pretium ullamcorper viverra integer praesent
+            tincidunt. At erat sagittis tellus ultricies in a. </section>
+        <h3>Get the most out of your credit card reward points</h3>
+        <section class="two">Massa, libero morbi morbi sed non sed. In et neque lectus ultricies leo eros. Auctor in
+            elementum accumsan malesuada gravida neque cursus pellentesque nunc. Dui nullam odio neque varius massa
+            praesent. Neque, porta vel, morbi nulla at tincidunt. Neque, et ultrices duis fermentum, tincidunt sem
+            sed. Erat accumsan dui enim nisl morbi feugiat.</section>
+        <section class="two">Ac eget lorem sit nulla sed fusce etiam. Elementum nibh in eu sed. Nibh non semper amet
+            sit hac tristique orci. Quis velit vitae amet magnis nec in nunc. Amet vitae id cras nibh. Sed ipsum,
+            lacinia in sit vitae. Duis luctus convallis risus purus sollicitudin purus id eu. Faucibus mattis eget
+            ullamcorper eu suspendisse elit elit lacus purus. Tortor felis.</section>
+        <h3>Why you don’t need more than 3 pieces of clothing</h3>
+        <section class="two">Massa aenean cursus nulla urna dui, fermentum cursus in facilisis. Vulputate euismod
+            vestibulum dolor in elementum quis quis. Erat proin in eget arcu tellus ut ultrices. Quis maecenas
+            ullamcorper ante sit leo placerat. Quisque dictum laoreet eget quam leo tortor scelerisque sit nullam.
+            Lacus, tortor, aenean mattis lobortis lacinia mauris. Viverra nulla.</section>
+        <section class="two">Sed pellentesque quam lorem urna. Mauris donec molestie eget massa pellentesque
+            facilisis netus mauris. Magna eget eget sollicitudin at faucibus odio. At augue sit nisi et metus cras
+            dignissim vel, tortor. Maecenas molestie consequat cursus posuere ultrices facilisis hac bibendum
+            semper. Sed lorem vel donec proin. Volutpat aliquet rhoncus sit et.</section>
+        <h2>Keep reading</h2>
+        <article class="related">
+            <div class="lab">
+                <img src="./image 5.png">
+
+                <h3 style="width: 516px;">Why you don’t need more than 3 pieces of clothing</h3>
+                <p style="color:  #4F4F4F; font: size 18px;">Et vitae, mollis euismod lobortis blandit amet sed amet. Amet ut amet nisl tortor arcu non id
+                    nulla mauris neque nisl magna.</p>
+
+            </div>
+            <div class="cook">
+                <img src="./image 6.png">
+
+                <h3>Why you should cook with your family together everyday</h3>
+
+                <p style="color:  #4F4F4F; font: size 18px;">Rutrum aliquet eros semper nunc. In adipiscing augue sagittis, fermentum donec nunc lacinia.
+                    Risus in egestas in orci quam.</p>
+            </div>
+        </article>
+        <article class="about">
+            <img src="./image 8.png">
+            <h3>Written by George Costanza</h3>
+            <p>Volutpat cursus id id tincidunt duis id. Urna curabitur ultrices molestie bibendum. Purus orci nisl,
+                commodo ipsum, ut urna, elementum. Nunc potenti lectus in erat ligula cras. Eget.</p>
+        </article>
+        <section class="five">
+            <div class="background">
+                <h3>Subscribe To Our Newsletter</h3>
+                <p>Get weekly food news, articles, and videos delivered to your inbox.</p>
+                <form>
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Email">
+                    <button>Sign up</button>
+                </form>
+            </div>
+            <div>
+                <p><b>POPULAR POSTS</b></p>
+                <p>How To Have Your Cake and Eat It Too: The Way of The Chicken Man</p>
+                <p>My Grandma’s 30-year-old Recipe</p>
+                <p>What I learned about cooking from Ratatoulie</p>
+            </div>
+            <div>
+                <p><b>RECENT POSTS</b></p>
+                <p>How To Have Your Cake and Eat It Too: The Way of The Chicken Man</p>
+                <p>My Grandma’s 30-year-old Recipe</p>
+                <p>What I learned about cooking from Ratatoulie</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+        <nav class="footer">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+        <section>Copyright © 2021 Food Ninja Blog. All Rights Reserved.</section>
+    </footer>
+</body>
+
+</html>
