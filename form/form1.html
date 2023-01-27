@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            line-height: 20px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Форма заявки на работу в зоопарке</h1>
+        <h3>Пожалуйста заполните форму.Обязательные поля помечены *</h3>
+        <form>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <label for="name"> Имя*
+                    <input type="text" id="name" name="name">
+                </label>
+
+                <label for="telephon"> Телефон
+                    <input type="text" id="telephon" name="telephon">
+                </label>
+                <label for="email"> Email*
+                    <input type="text" id="email" name="email">
+                </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Персональная информация</legend>
+                <label for="age"> Возраст
+                    <input type="text" id="age" name="age">
+                </label>
+                <label for="pol-select"> Пол
+                    <select name="pol" id="pol-select">
+                        <option value="man">мужчина</option>
+                        <option value="woman">женщина</option>
+
+                    </select>
+                </label>
+                <label for="infonation"> Перечислите личные качества
+                    <textarea id="information" name="information" rows="6" cols="10"></textarea>
+
+                </label>  </fieldset>
+                <fieldset>
+                <legend>Выбирите ваших любимых животных</legend>
+                <label for="name">Зебра
+                    <input type="checkbox" name="name">
+                </label>
+                <label for="name">Слон
+                    <input type="checkbox" name="name">
+                </label>
+                <label for="name">Кошак
+                    <input type="checkbox" name="name">
+                </label>
+                <label for="name">Антилопа
+                    <input type="checkbox" name="name">
+                </label>
+                <label for="name">Анаконда
+                    <input type="checkbox" name="name">
+                </label>
+                <label for="name">Змея
+                    <input type="checkbox" name="name">
+                </label>
+                <label for="name">голубь
+                    <input type="checkbox" name="name">
+                </label>
+                <label for="name">собака
+                    <input type="checkbox" name="name">
+                </label>
+</fieldset>
+          
+        </form>
+    </main>
+</body>
+
+</html>
