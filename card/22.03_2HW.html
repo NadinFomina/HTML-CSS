@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(72, 202, 72);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .product {
+            background-color: greenyellow;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 350px;
+            justify-content: space-between;
+            -webkit-box-shadow: -2px -2px 22px 13px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: -2px -2px 22px 13px rgba(0, 0, 0, 0.2);
+            box-shadow: -2px -2px 22px 13px rgba(0, 0, 0, 0.2);
+            position: relative;
+            left: -60px;
+            top: 75px;
+            border-radius: 3%;
+        }
+
+
+        .product>span {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            justify-content: center;
+            padding: 10px;
+            border-bottom-left-radius: 3%;
+            border-bottom-right-radius: 3%;
+
+        }
+
+        .product>span>img {
+            height: 35px;
+            width: 35px;
+            padding: 5px;
+            border: 1px solid;
+            margin: 5px;
+
+        }
+
+        main {
+            background-color: white;
+            width: 700px;
+            height: 500px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .product>img {
+            height: 300px;
+            width: 300px;
+            position: relative;
+            left: -100px;
+        }
+
+        .price {
+            justify-content: center;
+            align-content: center;
+            margin-top: 60px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .cena {
+            font-size: 60px;
+            color: rgb(241, 22, 22);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .cena>span {
+            font-size: 20px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(165, 158, 158);
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        .color>img {
+            height: 25px;
+            width: 25px;
+            padding: 5px;
+
+        }
+
+        ul {
+            padding: 3px;
+            line-height: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+
+        .color img:first-child {
+            border: 1px solid;
+        }
+
+        button {
+            background-color: rgb(241, 22, 22);
+            width: 200px;
+            height: 50px;
+           /* padding: 10px;*/
+            border-radius: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+          /*  margin-top: 40px;*/
+            text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <div>
+            <section class="product">
+
+                <img src="./яблоко3.png" alt="">
+                <span>
+                    <img src="./яблоко4.png" alt="">
+                    <img src="./яблоко5.png" alt="">
+                    <img src="./яблоко2.png" alt="">
+                    <img src="./яблоко1.png" alt="">
+
+                </span>
+
+            </section>
+
+            <section class="price">
+
+                <h1>Delicious Apples</h1>
+                <span class="cena">
+                    <span> R$ </span>7.93
+                </span>
+                <p>Select a color</p>
+                <span class="color">
+                    <img src="./яблоко4.png" alt="">
+                    <img src="./яблоко5.png" alt="">
+                    <img src="./яблоко2.png" alt="">
+                    <img src="./яблоко1.png" alt="">
+
+                </span>
+                <p>Benefits</p>
+                <ul>
+                    <li>Apples are nutricious</li>
+                    <li>Apples may be good for weight loss</li>
+                    <li>Apples may be good for bone heals</li>
+                    <li>They're linked to a lowest risk of diabetes</li>
+                </ul>
+                <button>ADD TO CART</button>
+
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
